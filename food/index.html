@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Cart</title>
+</head>
+<body>
+    <div class="food-cart-container">
+        <h2>Food Cart</h2>
+        <div class="food-grid">
+            <!-- Food 1 -->
+            <div class="food" onclick="addToCart('Margherita Pizza', 10.99)">
+                <img src="margherita_pizza.jpg" alt="Margherita Pizza">
+                <p>Margherita Pizza</p>
+                <p>$10.99</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+
+            <!-- Food 2 -->
+            <div class="food" onclick="addToCart('Grilled Salmon', 15.99)">
+                <img src="grilled_salmon.jpg" alt="Grilled Salmon">
+                <p>Grilled Salmon</p>
+                <p>$15.99</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+
+            <!-- Food 3 -->
+            <div class="food" onclick="addToCart('Chocolate Lava Cake', 7.99)">
+                <img src="chocolate_lava_cake.jpg" alt="Chocolate Lava Cake">
+                <p>Chocolate Lava Cake</p>
+                <p>$7.99</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
