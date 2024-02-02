@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="center">
+        <button class="box" onclick="openLoginSignupPopup()">Sign Up/Login</button>
+    </div>
+    <div class="popup" id="loginSignupPopup">
+        <div class="form">
+            <span class="close-btn" onclick="closeLoginSignupPopup()">&times;</span>
+            <h2 id="popupHeading">Sign In</h2>
+            <form id="loginForm" onsubmit="return signIn()">
+                <div class="form-element">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                <div class="form-element">
+
+                    <button class="signinBtn" type="submit">Sign In</button>
+
+                </div>
+
+                <p>Don't have an account? <button class="altBtn" type="button" onclick="toggleForm()">Sign Up</button>
+                </p>
+
+            </form>
+
+            <form id="signupForm" style="display: none;" onsubmit="return SignUp()">
+                <div class="form-element">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-element">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+
+
+                <div class="form-element">
+                    <button class="signinBtn" type="submit">Sign Up</button>
+                </div>
+                <p>Already have an account? <button class="altBtn" type="button" onclick="toggleForm()">Sign In</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>
