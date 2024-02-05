@@ -59,7 +59,7 @@ const ShoppingCart = () => {
 
   return (
     <div  className="container">
-      <h1>Shopping Cart</h1>
+      <h1>Your Cart</h1>
       
       {/* Add new item section */}
       {/* (You can add your own form inputs to capture new item details) */}
