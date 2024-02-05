@@ -72,10 +72,12 @@ const ShoppingCart = () => {
       <ul>
         {items.map(item => (
           <li key={item.id}>
-            {item.name} - ${item.price} <div className="text-end">{item.price}</div> 
-            <button onClick={() => handleDelete(item.id)}>Delete</button>
+            {item.name} <t /> ${item.price}
+            
             <button onClick={() => handleIncreaseQuantity(item.id)} >+</button>
-            <button onClick={() => handleDecreaseQuantity(item.id)} >-</button>
+            <div className="text-end">{item.quantity}</div>
+            <button onClick={() => handleDecreaseQuantity(item.id)} >-</button><br />
+            <button onClick={() => handleDelete(item.id)}>Delete</button>
           
           </li>
         ))}
