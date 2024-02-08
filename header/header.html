@@ -3,91 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Food Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #8e8282;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: flex-end;
-    }
-
-    img.logo {
-      max-width: 80px;  /* Adjusted size for the bulb logo */
-      max-height: 80px;
-      margin-bottom: 5px; /* Adjusted margin to move the logo down */
-    }
-
-    h1 {
-      margin-left: 10px; /* Adjusted margin for spacing between logo and text */
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 15px;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 10px 15px;
-      border-radius: 5px;
-    }
-
-    #homeLink { background-color: #faf9f8; }
-    #aboutLink { background-color: #f2f4f5; }
-    #contactLink { background-color: #f7faf9; }
-
-    .search-container {
-      position: relative;
-      display: inline-block;
-    }
-
-    input.search-box {
-      padding: 8px;
-      width: 200px;
-      background-color: black;  /* Set the background color to black */
-      color: white;  /* Set text color to white */
-      border: none;
-      border-radius: 5px;
-      outline: none;
-    }
-
-    img.search-logo {
-      max-width: 30px;  /* Adjusted size for the search logo */
-      max-height: 30px;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    a#cartLink {
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    img.cart-logo {
-      max-width: 40px;  /* Adjusted size for the cart logo */
-      max-height: 40px;
-    }
-  </style>
 </head>
 <body>
 
@@ -102,7 +19,6 @@
     <div class="search-container">
       <input type="text" placeholder="Search" class="search-box">
       <!-- You can replace the search logo URL below with your own -->
-      
     </div>
     <a href="#" id="cartLink">
       <!-- You can replace the cart logo URL below with your own -->
@@ -110,5 +26,8 @@
     </a>
   </nav>
 </header>
+
+<script src="script.js"></script>
+
 </body>
 </html>
